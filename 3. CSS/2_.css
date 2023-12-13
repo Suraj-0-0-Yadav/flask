@@ -1,0 +1,22 @@
+/* body{
+    background: url(https://media.istockphoto.com/id/1017193718/photo/abstract-background-of-spheres-and-wire-frame-landscape.jpg?s=2048x2048&w=is&k=20&c=jc3mJr09zuDtQUKlqPJib5oCAsnhHYS8c5rAZB5XTi0=);
+    background-repeat: no-repeat;
+} */
+
+div{
+    background-color: rgb(65, 140, 206);
+    /* border: orange;
+    border-width: 10px;
+    border-style: solid; */
+    border: red 15px dashed;
+}
+
+p{
+    color: rgb(58, 206, 95);
+}
+
+span{
+    background-color: yellow;
+    color: red;
+}
+
