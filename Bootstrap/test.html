@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Information Form</title>
+    <!-- Add Bootstrap CSS link -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Add Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            color: #007bff;
+            text-align: center;
+        }
+        label {
+            font-weight: bold;
+            color: #343a40;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        button {
+            background-color: #007bff;
+            color: #ffffff;
+            font-weight: bold;
+        }
+        .fa {
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container mt-5">
+        <h1 class="mb-4"><i class="fas fa-user"></i> User Information Form</h1>
+
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name"><i class="fas fa-user"></i> Name:</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="age"><i class="fas fa-birthday-cake"></i> Age:</label>
+                <input type="number" class="form-control" id="age" name="age" required>
+            </div>
+
+            <div class="form-group">
+                <label for="country"><i class="fas fa-globe"></i> Country:</label>
+                <select class="form-control" id="country" name="country" required>
+                    <option value="usa">United States</option>
+                    <option value="canada">Canada</option>
+                    <option value="uk">United Kingdom</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="phone"><i class="fas fa-phone"></i> Phone Number:</label>
+                <input type="tel" class="form-control" id="phone" name="phone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email"><i class="fas fa-envelope"></i> Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="height"><i class="fas fa-arrows-alt-v"></i> Height (in cm):</label>
+                <input type="number" class="form-control" id="height" name="height" required>
+            </div>
+
+            <div class="form-group">
+                <label for="weight"><i class="fas fa-weight"></i> Weight (in kg):</label>
+                <input type="number" class="form-control" id="weight" name="weight" required>
+            </div>
+
+            <div class="form-group">
+                <label for="eyeColor"><i class="fas fa-eye"></i> Eye Color:</label>
+                <select class="form-control" id="eyeColor" name="eyeColor" required>
+                    <option value="blue">Blue</option>
+                    <option value="brown">Brown</option>
+                    <option value="green">Green</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Submit</button>
+        </form>
+    </div>
+
+    <!-- Add Bootstrap JS and Popper.js scripts (order is important) -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- Add Font Awesome JS script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+
+</body>
+</html>
