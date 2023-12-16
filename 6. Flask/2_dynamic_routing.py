@@ -15,5 +15,9 @@ def information():
 def puppy(name):
     return f"<h1>This is page for {name.upper()}<h1/>"
 
+@app.route("/get100/<name>")
+def get100(name):
+    return f"100th letter is {name[0]}"
+
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
