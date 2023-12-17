@@ -1,0 +1,33 @@
+{% extends '7_base.html' %}
+
+{% block content %}
+
+    <div class="container-fluid text-center py-5 bg-dark">
+        <div class="jumbotron text-light rounded p-5 shadow-lg" style="background-image: url('path/to/your-pattern.png');">
+            <h1 class="display-3 mb-4 text-info">Welcome to <span class="text-success">InnoWeb</span>!</h1>
+            <p class="lead text-muted">Unleash your creativity - Choose a unique and stylish username below.</p>
+
+            <form action="{{ url_for('report') }}" class="mt-4">
+                <div class="form-group">
+                    <label for="username" class="sr-only">Username:</label>
+                    <div class="input-group">
+                        <input type="text" name="username" id="username" class="form-control form-control-lg" placeholder="Enter a cool username" required>
+                        <div class="input-group-append">
+                            <button type="submit" class="btn btn-warning btn-lg">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <div class="mt-5 text-muted"> <!-- Change text color to light gray -->
+                <p class="lead">Not sure where to start? How about:</p>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><i class="fas fa-star text-warning"></i> Your favorite color + Birth year</li>
+                    <li class="mb-2"><i class="fas fa-star text-warning"></i> A superhero name mashup</li>
+                    <li class="mb-2"><i class="fas fa-star text-warning"></i> Randomly combine two hobbies</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

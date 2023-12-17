@@ -1,0 +1,38 @@
+{% extends '7_base.html' %}
+
+{% block content %}
+
+    <div class="container-fluid text-center py-5 bg-light">
+        <div class="jumbotron">
+
+            {% if report %}
+                <div class="alert alert-success">
+                    <h4 class="alert-heading"><i class="bi bi-check-circle"></i> Success!</h4>
+                    <p class="mb-0">Your username has successfully met all the criteria. 🌟</p>
+                </div>
+            {% else %}
+
+                <div class="alert alert-danger">
+                    <h4 class="alert-heading"><i class="bi bi-x-circle"></i> Oops! Something's not right.</h4>
+                    <p class="mb-0">It seems your username needs some adjustments. Please check the following:</p>
+                    <ul class="mt-3">
+                        {% if not lower_letter %}
+                            <li><i class="bi bi-type"></i> Add a lowercase letter</li>
+                        {% endif %}
+
+                        {% if not upper_letter %}
+                            <li><i class="bi bi-type"></i> Add an uppercase letter</li>
+                        {% endif %}
+
+                        {% if not num_end %}
+                            <li><i class="bi bi-type-numeric"></i> End with a digit</li>
+                        {% endif %}
+                    </ul>
+                </div>
+
+            {% endif %}
+
+        </div>
+    </div>
+
+{% endblock %}
