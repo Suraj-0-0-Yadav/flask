@@ -1,0 +1,26 @@
+<h1>Welcome to the puppy Servey</h1>
+
+<form method="POST">
+
+    {{form.hidden_tag()}}
+
+    {{form.breed.label}} {{ form.breed }}
+    <br>
+
+    {{ form.neutered.label }} {{ form.neutered }}
+    <br>
+
+    {{ form.food_list.label }} {{form.food_list}}
+    <br>
+
+    {{ form.mood.label }} {{ form.mood }}
+    <br>
+
+    {{ form.feedback }}
+    <br>
+
+    {{form.submit()}}
+
+
+
+</form>
